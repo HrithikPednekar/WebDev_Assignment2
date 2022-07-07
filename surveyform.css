@@ -7,11 +7,7 @@
 .required::before {
     content:" *";
     color: red;
-  }
-
-/* .text-center{
-
-} */
+}
 
 .heading{
     text-align: center;
@@ -39,7 +35,6 @@
 
 .form{
     font-family: castellar;
-    /* background-color:coral ; */
     background-color: var(--secondary-color);
     padding: 15px;
     border: 5px transparent;
@@ -64,16 +59,22 @@
 #name, #email, #age{
     background: transparent;
     position:relative;
-    /* z-index: -1; */
+    width: 400px;
+    height: 30px;
     color: var(--primary-color);
-    border-color: var(--primary-color);
+    border-color: var(--button-color);
+    font-size: 15px;
+    font-family: Walbaum Display Light;
+    font-weight:bold;
+    text-align: justify;
 }
 
 ::placeholder{
     color: var(--primary-color);
+    font-family: Castellar;
 }
 
-.required label, .label, .likes, .improve, .input-check, .mini-label{
+.required label, .label, .likes, .improve, .input-check, .mini-label, .btn{
     color: var(--primary-color);
     font-family: castellar;
 }
@@ -102,20 +103,29 @@ input[type='radio'] {
     font-family: Colonna MT;
 }
 
-.select-option{
+.select-option, .select_option{
     padding: 10px;
     font-size: medium;
     font-family: castellar;
+    background-color: var(--secondary-color);
+    color: var(--button-color);
+    border-color: var(--button-color);
 }
 
 .submit_button{
-background-color: var(--button-color);
-font-size: x-large;
-border-radius: 10px;
-margin-left: 50px;
-padding-left: 20px;
-padding-right: 20px;
-padding-top: 8px;
-padding-bottom: 8px;
-box-shadow: 2px 2px 1px var(--primary-color);
+    background-color: var(--secondary-color);
+    font-size: x-large;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-color: #1ab188;
+}
+
+#submit{
+    color: var(--button-color);
+    font-family: castellar;
 }
