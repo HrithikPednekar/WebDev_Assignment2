@@ -1,0 +1,121 @@
+:root{
+    --primary-color: rgba(188,190,187,255);
+    --secondary-color: #24323d;
+    --button-color:#1ab188; 
+}
+
+.required::before {
+    content:" *";
+    color: red;
+  }
+
+/* .text-center{
+
+} */
+
+.heading{
+    text-align: center;
+    font-family: castellar;
+    font-size: 15px;
+    font-stretch: ultra-expanded;
+    background-color: var(--button-color);
+    border: 1px var(--secondary-color);
+    border-radius: 40px;
+    border-style: solid;
+    padding: 5px;
+    margin-left: 500px;
+    margin-right: 500px;
+    box-shadow: 4px 4px 2px var(--secondary-color);
+    margin-top: 10px;
+}
+
+.body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: var(--primary-color)
+    
+}
+
+.form{
+    font-family: castellar;
+    /* background-color:coral ; */
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border: 5px transparent;
+    border: 1px black;
+    border-style: solid;
+    border-radius: 25px;
+    box-shadow: 4px 4px 2px black;
+    margin-top: 15PX;
+    margin-left: 350px;
+    margin-right: 350px
+}
+
+.description text-center{
+    font-family: Walbaum Display Light;
+}
+
+.form-div{
+    font-family: castellar;
+    background-color: var(--primary-color);
+}
+
+#name, #email, #age{
+    background: transparent;
+    position:relative;
+    /* z-index: -1; */
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+::placeholder{
+    color: var(--primary-color);
+}
+
+.required label, .label, .likes, .improve, .input-check, .mini-label{
+    color: var(--primary-color);
+    font-family: castellar;
+}
+
+.mini-label{
+    margin: 1rem;
+}
+
+input[type='radio'] {
+    color: var(--primary-color);
+}
+
+.label{
+    margin-right: 5px;
+    margin-left: 50px;
+}
+
+.input-radio{
+    align-items: center;
+}
+
+#description{
+    color: var(--primary-color);
+    font-size: xx-large;
+    font-weight: 900;
+    font-family: Colonna MT;
+}
+
+.select-option{
+    padding: 10px;
+    font-size: medium;
+    font-family: castellar;
+}
+
+.submit_button{
+background-color: var(--button-color);
+font-size: x-large;
+border-radius: 10px;
+margin-left: 50px;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 8px;
+padding-bottom: 8px;
+box-shadow: 2px 2px 1px var(--primary-color);
+}

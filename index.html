@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="surveyform2.css" rel="stylesheet" type="text/css">
+    <title>Survey Form</title>
+</head>
+<body class="body">
+    <div class="container">
+        <header class="heading">
+          <h1 id="title" class="text-center">Survey Form</h1>
+        </header>   
+    
+    <form style="text-align: center;" class="form">
+        <p id="description" class="description text-center">
+            Let us know how we can improve freeCodeCamp
+          </p>
+        <div class="form_div">
+            <label for="name" class="required label"><b>Name:</b></label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required />
+        </div>
+        <br>
+        <div class="form_div">
+            <label for="email" class="required label"> <b>Email:</b></label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required />
+        </div>
+        <br>
+        <div class="form_div">
+            <label for="age" class="required label"> <b>Age:</b></label>
+            <input type="number" name="age"  size="100" min="1" maxlength="3" id="age" placeholder="Age" />
+        </div>
+        <br>
+        <div class="form_div">
+        <label for="role"  class="label"><b>Which option best describes your current role ?</b></label>
+        <br><br>
+        <select name="Role" class="select_option">
+            <option value="student">Student</option>
+            <option value="learner">Learner</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+        <br>
+        <div class="form_div">
+        <label for="recommendation" class="label">How likely is that you recommend freeCodeCamp to a friend ?</label><br><br>       
+            <label class="mini-label"> 
+                <input type="radio" name="radio" class="input-radio" />
+                Definitely
+            </label>
+            <br><br>
+            <label class="mini-label"> 
+                <input type="radio" name="radio" class="input-radio" />
+                Maybe
+            </label>
+            <br><br>
+            <label class="mini-label"> 
+                <input type="radio" name="radio" class="input-radio" />
+                Not Sure
+            </label>
+        </div>
+        <br>
+        <div class="form_div">
+            <p class="likes">What do you like most in FCC:</p>
+            <select name="FCC" class="select-option">
+                <option value="Select_an_option">Select an option</option>
+                <option value="forum">Forum</option>
+                <option value="projects">Projects</option>
+                <option value="community">community</option>
+            </select>
+        </div>
+        <br><br>
+        <div class="form_div">
+            <label for="improvisation" class="improve">Things that should be improved in the future(Check all that apply ;&nbsp;)</label><br>  <br>     
+                <label  class="input-check"> 
+                    <input type="checkbox" name="Front-end">
+                    Front-end Projects
+                </label>
+                <br><br>
+                <label class="input-check"> 
+                    <input type="checkbox" name="Back-end">
+                    Back-end Projects
+                </label>
+                <br><br>
+                <label class="input-check" > 
+                    <input type="checkbox" name="data_visualization">
+                    Data Visualization
+                </label>
+        </div><br><br>
+            
+        <div class="form_div">
+            <button type="submit" id="submit" class="submit_button">
+              Submit
+            </button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
